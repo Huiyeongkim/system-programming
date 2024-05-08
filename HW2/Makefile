@@ -1,0 +1,13 @@
+CC = gcc
+CFLAGS = -Wall -g
+TARGET = 20210292
+SOURCES = 20210292.c
+HEADERS = 20210292.h
+
+all: $(TARGET)
+
+$(TARGET): $(SOURCES) $(HEADERS)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SOURCES)
+
+clean:
+	rm -f $(TARGET)
